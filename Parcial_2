@@ -1,6 +1,36 @@
-#include <iostream>
-using namespace std;
+#include "iostream"
+using namespace  std;
+
+void menu(){
+    int opcion;
+
+    do{
+        cout<< "MENU";
+        cout<< "opcion 1";
+        cout<< "opcion 2";
+        cout<< "opcion 3";
+        cout<< "opcion 4";
+        cout<< "0: SALIR";
+        cin >> opcion;
+        switch (opcion) {
+            case 1:
+                cout<< "opcion 1";
+                break;
+            case 2:
+                 cout<< "opcion 2";
+                 break;
+            case 3:
+                cout <<"opcion 3";
+            case 4:
+                cout<< "opcion 4";
+                break;
+            default:
+                cout << "Opción no válida. Por favor, elija una opción válida." << endl;
+                break;
+        }
+    }while(opcion != 0);
+}
 
 int main(){
-    
+
 }
